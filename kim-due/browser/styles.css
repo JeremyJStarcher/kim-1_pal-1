@@ -1,0 +1,90 @@
+body {
+  font: normal 16px sans-serif;
+  background-color: rgb(70, 66, 66);
+  color: white;
+}
+
+#ledbar, #button-box {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+#button-box {
+  margin-left: 1.5em;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+#button-box button {
+  flex: 1 0 21%;
+  margin: 5px;
+  height: 50px;
+  background-color: black;
+  border: 1px solid grey;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+#ledbar {
+  background-color: black; /* #5f0000; */
+}
+
+#ledbar svg {
+  width: 50px;
+  height: 70px;
+}
+
+#ledbar div {
+  width: 50px;
+  height: 70px;
+}
+
+#ledbar-4 {
+  margin-left: 3em;
+}
+
+#kim {
+  border: 1px solid green;
+  background-color: rgb(11, 56, 11);
+  display: inline-block;
+}
+
+#serial {
+  margin-right: 1em;
+  margin-left: 1em;
+
+  display: table;
+  border: 1em  solid rgb(17, 34, 10);
+  max-width: 80em;
+  height: 25em;
+
+  font-family:monospace,monospace;
+  font-size:1.25em;
+  background-color: rgb(17, 34, 10);
+  color: rgb(152, 248, 152);
+}
+
+.splitscreen {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.splitscreen .left {
+  flex: 1;
+}
+
+.splitscreen .right {
+  flex: 1.5;
+}
+
+.cursor {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

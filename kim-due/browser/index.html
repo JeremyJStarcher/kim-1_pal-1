@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>WebAssembly Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="styles.css" />
+	<script src="index.js"></script>
+	<script src="run.js"></script>
+</head>
+
+<body>
+
+	<div class="splitscreen">
+		<div class="right">
+
+			<div>
+				LOG:
+				<span id="log"></span>
+			</div>
+
+			<div id="kim">
+				<div id="ledbar">
+					<div id="ledbar-0"></div>
+					<div id="ledbar-1"></div>
+					<div id="ledbar-2"></div>
+					<div id="ledbar-3"></div>
+					<div id="ledbar-4"></div>
+					<div id="ledbar-5"></div>
+				</div>
+				<div id="button-box">
+					<button data-asc="7">GO</button>
+					<button data-asc="20">ST</button>
+					<button data-asc="18">RS</button>
+					<button data-asc="16"><strike>SST</strike></button>
+					<!-- -->
+					<button data-asc="1">AD</button>
+					<button data-asc="4">DA</button>
+					<button data-asc="16">PC</button>
+					<button data-asc="43">+</button>
+					<!-- -->
+					<button data-asc="67">C</button>
+					<button data-asc="68">D</button>
+					<button data-asc="69">E</button>
+					<button data-asc="70">F</button>
+					<!-- -->
+					<button data-asc="56">8</button>
+					<button data-asc="57">9</button>
+					<button data-asc="65">A</button>
+					<button data-asc="66">B</button>
+					<!-- -->
+					<button data-asc="52">4</button>
+					<button data-asc="53">5</button>
+					<button data-asc="54">6</button>
+					<button data-asc="55">7</button>
+					<!-- -->
+					<button data-asc="48">0</button>
+					<button data-asc="49">1</button>
+					<button data-asc="50">2</button>
+					<button data-asc="51">3</button>
+					<!-- -->
+				</div>
+			</div>
+		</div>
+
+		<div class="left">
+			<pre id="serial">
+00000000001111111111222222222233333333334444444444555555555566666666667777777777
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+			</pre>
+		</div>
+	</div>
+
+	<div style="display:none">
+		<svg id="seg7" xmlns="http://www.w3.org/2000/svg" width="192px" height="320px" viewBox="-1 -1 12 20">
+			<g id="acg" style="fill-rule:evenodd;
+				stroke:rgb(41, 1, 1); 
+				stroke-width:0.25;
+				stroke-opacity:1;
+				stroke-linecap:butt; 
+				stroke-linejoin:miter;">
+				<polygon id="a" points=" 1, 1  2, 0  8, 0  9, 1  8, 2  2, 2" fill="#DDDDDD" />
+				<polygon id="b" points=" 9, 1 10, 2 10, 8  9, 9  8, 8  8, 2" fill="#DDDDDD" />
+				<polygon id="c" points=" 9, 9 10,10 10,16  9,17  8,16  8,10" fill="#DDDDDD" />
+				<polygon id="d" points=" 9,17  8,18  2,18  1,17  2,16  8,16" fill="#DDDDDD" />
+				<polygon id="e" points=" 1,17  0,16  0,10  1, 9  2,10  2,16" fill="#DDDDDD" />
+				<polygon id="f" points=" 1, 9  0, 8  0, 2  1, 1  2, 2  2, 8" fill="#DDDDDD" />
+				<polygon id="g" points=" 1, 9  2, 8  8, 8  9, 9  8,10  2,10" fill="#DDDDDD" />
+			</g>
+		</svg>
+	</div>
+</body>
+
+</html

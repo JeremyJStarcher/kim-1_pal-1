@@ -1,0 +1,13 @@
+.pio
+.pioenvs
+.piolibdeps
+.vscode
+src/kim-1-due/.vscode
+src/kim-1-due/src/.vscode/
+KIM-1/fltpt65_uno/*.h65
+KIM-1/fltpt65_uno/*.h6x
+KIM-1/fltpt65_uno/*.hex
+KIM-1/fltpt65_uno/*.log
+KIM-1/fltpt65_uno/*.lst
+KIM-1/fltpt65_uno/*.xrf
+browser/dist
